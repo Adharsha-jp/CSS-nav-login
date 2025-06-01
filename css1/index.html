@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Window</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background1.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        .login-container {
+            width: 300px;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 100px auto;
+            padding: 50px 30px 30px 30px;
+            /* add top padding for avatar space */
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid white;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            color: white;
+        }
+        
+        .checkbox {
+            text-align: left;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+        
+        .checkbox input {
+            margin-right: 5px;
+        }
+        
+        .checkbox a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <img src="avatar-removebg-preview.png" alt="Avatar" class="avatar">
+        <h2>LOGIN WINDOW</h2>
+        <form>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="password" placeholder="Your Password" required>
+            <div class="checkbox">
+                <input type="checkbox" required> Agree With <a href="#">Terms & Condition</a>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
